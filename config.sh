@@ -119,7 +119,7 @@ case "$1" in
 	echo - onyx  \(OnePlus X\)
 	echo - bluejay \(Google Pixel 6a\)
 	echo - b2g_gsi \(B2G Generic System Images\)
-	echo - b2g_gsi_13 \(B2G Generic System Images (A13)\)
+	echo - b2g_gsi_13 \(B2G Generic System Images \(A13\)\)
 	exit -1
 	;;
 esac
