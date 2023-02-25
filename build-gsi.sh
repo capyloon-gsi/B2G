@@ -38,6 +38,12 @@ case "$1" in
         echo TARGET_NAME=phhgsi_arm_a  >> .tmp-config &&
         echo DEVICE_NAME=phhgsi_arm_a >> .tmp-config
         ;;
+"gsi-13_arm64_ab")
+        echo PRODUCT_NAME=treble_arm64_bvN  >> .tmp-config &&
+        echo TARGET_NAME=tdgsi_arm64_ab  >> .tmp-config &&
+        echo DEVICE_NAME=tdgsi_arm64_ab >> .tmp-config &&
+        echo BINSUFFIX=64 >> .tmp-config
+        ;;
 *)
         echo "Usage: $0 [device name] [other]"
         echo Valid devices to configure are:
@@ -45,6 +51,7 @@ case "$1" in
         echo - gsi_arm_ab \(arm partitionA/B \)
         echo - gsi_arm64_a \(arm64 partitionAonly \)
         echo - gsi_arm_a \(arm partitionAonly \)
+        echo - gsi-13_arm64_ab  \(arm64 partitionA/B base on A13\)
         exit -1
         ;;
 esac
