@@ -31,7 +31,7 @@ case `uname` in
 esac
 
 GITREPO=${GITREPO:-"https://github.com/capyloon-gsi/manifests"}
-BRANCH=${BRANCH:-gsi-13-r24}
+BRANCH=${BRANCH:-aosp-13-r24}
 
 while [ $# -ge 1 ]; do
 	case $1 in
